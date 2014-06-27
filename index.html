@@ -1,1 +1,101 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ryan Orr</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <!-- Typed.js from http://www.mattboldt.com/demos/typed-js -->
+    <script type="text/javascript" src="js/typed.js"></script>
+    <script>
+      $(function() {
+        $( "#tabs" ).tabs();
+      });
+    </script>
+    <script>
+      $(function(){
+        $("#typed").typed({
+          strings: ["Ryan Orr"],
+          typeSpeed: 30
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <a href="/"><span id="typed"></span></a>
+      <div id="links">
+          <a href="http://github.com/rworr" target="_blank">Github</a>
+          <br>
+          <a href="http://ca.linkedin.com/in/rworr" target="_blank">LinkedIn</a>
+      </div>
+      <hr>
+    </div>
+  
+    <div id="tabs">
+      <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+        <li><a href="#ml">Machine Learning</a></li>
+        <li><a href="#os">Operating Systems</a></li>
+        <li><a href="#comp">Compilers</a></li>
+        <li><a href="#web">Web</a></li>
+        <li><a href="#mobile">Mobile</a></li>
+        <li><a href="#algo">Algorithms</a></li>
+      </ul>
+      <div id="ml">
+        Machine Learning<br>
+        A9<br>
+        hackWaterloo<br>
+        Coursera ML<br>
+        Hadoop/MR<br>
+        Intro to Data Sci<br>
+        NOTE: NLP under Compilers
+      </div>
+      <div id="os">
+        Operating Systems<br>
+        SAP<br>
+        LFDS<br>
+        VM<br>
+        HW/SW Interface <br>
+      </div>
+      <div id="comp">
+        Compilers and Languages<br>
+        OptumSoft<br>
+        Fuzzer<br>
+        Coursera compilers<br>
+        Programming Languages<br>
+        NLP<br>
+      </div>
+      <div id="web">
+        Web Dev<br>
+        Harris<br>
+        A9<br>
+        This site<br>
+        PennApps<br>
+        HTML5 Game Dev<br>
+        Web Dev Udacity<br>
+        Interactive 3D Graphics<br>
+      </div>
+      <div id="mobile">
+        Mobile Dev<br>
+        FriendScore<br>
+        NEED TO DO MORE!<br>
+      </div>
+      <div id="algo">
+        Algorithms<br>
+        Project Euler<br>
+        POSA<br>
+        Heterogeneous Parallel Programming<br>
+        Programming in Python<br>
+        Intro to CS<br>
+        Cryptography<br>
+        Image and Video Processing<br>
+        Scala?<br>
+        Databases<br>
+        Networks<br>
+      </div>
+    </div> 
+  </body>
+</html>

@@ -1,0 +1,138 @@
+a:focus {
+    outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  width: 100%;
+  -webkit-margin-after: 0px;
+  border-width: 0px;
+  border-top-width: 1px;
+  color: #555555;
+  border-style: solid;
+}
+
+body {
+  margin: 0;
+}
+
+.ui-tabs {
+  padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav {
+  padding: 0;
+}
+
+#title {
+  float: left;
+}
+
+#links { 
+  float: right;
+  text-align: right;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/* Minimalistic tabs based on http://keith-wood.name/uiTabs.html */
+
+#tabs { 
+    background: transparent; 
+    border: none; 
+    user-select: none;
+    text-decoration: none;
+} 
+#tabs .ui-widget-header { 
+    background: transparent; 
+    border: none; 
+    border-bottom: 1px solid #555555; 
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px; 
+    border-radius: 0px; 
+} 
+#tabs .ui-tabs-nav .ui-state-default { 
+    background: transparent; 
+    border: none; 
+} 
+#tabs .ui-tabs-nav .ui-state-active { 
+    background: #DCDCDC;
+    border: none; 
+    border-bottom: 1px solid #555555; 
+} 
+#tabs .ui-tabs-nav .ui-state-default a { 
+    color: #c0c0c0; 
+} 
+#tabs .ui-tabs-nav .ui-state-active a { 
+    color: black; 
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 0px;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tr {
+    border-top-left-radius: 0px;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    width:16.66%;
+    text-align: center;
+    margin: 0;
+}
+.ui-tabs .ui-tabs-nav li a {
+    width:100%;
+    text-align:center;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  padding: .5em 0em;
+}
+
+/* Formatting for typed.js */
+
+#typed {
+  font-family: "Consolas";
+  font-size: 200%;
+}
+
+#typed-cursor{
+  opacity: 1;
+  font-weight: 100;
+  font-family: "Consolas";
+  font-size: 1.75em;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-ms-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
