@@ -4,7 +4,11 @@ a:focus {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+a {
+  vertical-align: bottom;
 }
 
 hr {
@@ -16,13 +20,54 @@ hr {
   border-style: solid;
 }
 
-body {
+table {
+  width: 100%;
+  height: 100%;
+  vertical-align: text-bottom;
+}
+
+td {
+  height: 100%;
+}
+
+#github {
+  height: 100%;
+  display: block;
+  font-family: 'Lato', sans-serif;
+}
+
+#linkedin {
+  float: right;
+  height: 100%;
+  display: block;
+  font-family: 'Lato', sans-serif;
+}
+
+#title {
+  text-align: center;
+  color: white;
+  font-size: 300%;
+  letter-spacing: 3px;
+  float: center;
+  width: 100%;
+}
+
+#header {
+  background-color: #1a1a1a;
+  height: 15%
+}
+
+body, html {
   margin: 0;
+  height: 100%;
+  font-family: 'Maven Pro', sans-serif;
+  background: #1a1a1a;
 }
 
 .ui-tabs {
   padding: 0;
 }
+
 
 .ui-tabs .ui-tabs-nav {
   padding: 0;
@@ -32,11 +77,11 @@ body {
   float: left;
 }
 
-#links { 
-  float: right;
-  text-align: right;
-  vertical-align: middle;
-  height: 100%;
+#tabpanel { 
+    background: #1a1a1a;
+    text-align: center;
+    overflow: auto;
+    height: 94%;
 }
 
 /* Minimalistic tabs based on http://keith-wood.name/uiTabs.html */
@@ -46,11 +91,11 @@ body {
     border: none; 
     user-select: none;
     text-decoration: none;
+    height: 85%
 } 
 #tabs .ui-widget-header { 
     background: transparent; 
     border: none; 
-    border-bottom: 1px solid #555555; 
     -moz-border-radius: 0px; 
     -webkit-border-radius: 0px; 
     border-radius: 0px; 
@@ -60,14 +105,20 @@ body {
     border: none; 
 } 
 #tabs .ui-tabs-nav .ui-state-active { 
-    background: #DCDCDC;
-    border: none; 
-    border-bottom: 1px solid #555555; 
+    background: white;
+    border: none;
 } 
 #tabs .ui-tabs-nav .ui-state-default a { 
+    background: #1a1a1a;
     color: #c0c0c0; 
 } 
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    padding-bottom: 0px;
+}
+
 #tabs .ui-tabs-nav .ui-state-active a { 
+    background: white;
     color: black; 
 }
 
@@ -79,13 +130,19 @@ body {
     border-top-left-radius: 0px;
 }
 
+.ui-corner-bottom {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 .ui-tabs .ui-tabs-nav li {
-    width:16.66%;
+    width:16.6666666667%;
     text-align: center;
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 .ui-tabs .ui-tabs-nav li a {
-    width:100%;
+    width: 100%;
     text-align:center;
 }
 
@@ -93,46 +150,23 @@ body {
   padding: .5em 0em;
 }
 
-/* Formatting for typed.js */
-
-#typed {
-  font-family: "Consolas";
-  font-size: 200%;
+.ui-widget-content {
+  color: white;
+  font-family: 'Lato', sans-serif;
 }
 
-#typed-cursor{
-  opacity: 1;
-  font-weight: 100;
-  font-family: "Consolas";
-  font-size: 1.75em;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  -ms-animation: blink 0.7s infinite;
-  -o-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
+.ui-tabs .ui-tabs-panel {
+  padding: 0;
+  background-color: rgba(85,85,85,.8);
+  position: absolute;
+  top: 41px;
+  margin: 0;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  height: 0;
+  overflow: auto;
 }
-@-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-@-moz-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-@-ms-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-@-o-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
+
+
+

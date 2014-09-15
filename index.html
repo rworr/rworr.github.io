@@ -5,96 +5,135 @@
     <title>Ryan Orr</title>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300|Maven+Pro' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-    <!-- Typed.js from http://www.mattboldt.com/demos/typed-js -->
-    <script type="text/javascript" src="js/typed.js"></script>
     <script>
-      $(function() {
-        $( "#tabs" ).tabs();
+      activeId = 'ml';
+    
+      setHeight = function(id) {
+          var body = document.body;
+          var html = document.documentElement;
+          var tab = document.getElementById(id);
+          var panel = document.getElementById('tabpanel');
+          var marginHeight = panel.offsetWidth * 0.15;
+          var height = panel.offsetHeight - marginHeight;
+          console.log(marginHeight);
+          tab.setAttribute('style','height:' + height.toString() + 'px;');
+          console.log(height);
+      }
+    
+      window.onload = function() {
+          setHeight(activeId);
+      }
+      
+      $(window).resize(function() {
+          setHeight(activeId);
       });
-    </script>
-    <script>
-      $(function(){
-        $("#typed").typed({
-          strings: ["Ryan Orr"],
-          typeSpeed: 30
-        });
+            
+      $(function() {
+        $('#tabs').tabs({
+          activate: function(event, ui) {
+            activeId = ui.newPanel[0].id;
+            setHeight(activeId);
+        }});
       });
     </script>
   </head>
 
   <body>
-    <div>
-      <a href="/"><span id="typed"></span></a>
-      <div id="links">
-          <a href="http://github.com/rworr" target="_blank">Github</a>
-          <br>
-          <a href="http://ca.linkedin.com/in/rworr" target="_blank">LinkedIn</a>
-      </div>
-      <hr>
+    <div id="header">
+      <table>
+        <tr>
+          <td>
+            <span id="github">
+              <a href="http://github.com/rworr" target="_blank">Github</a>
+            </span>
+          </td>
+          <td>
+            <a href="/"><span id="title">RYAN ORR</span></a>
+          </td>
+          <td>
+            <span id="linkedin">
+              <a href="http://ca.linkedin.com/in/rworr" target="_blank">LinkedIn</a>
+            </span>
+          </td>
+        </tr>
+      </table>
     </div>
   
     <div id="tabs">
       <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
-        <li><a href="#ml">Machine Learning</a></li>
-        <li><a href="#os">Operating Systems</a></li>
-        <li><a href="#comp">Compilers</a></li>
-        <li><a href="#web">Web</a></li>
-        <li><a href="#mobile">Mobile</a></li>
-        <li><a href="#algo">Algorithms</a></li>
+        <li><a href="#ml">MACHINE LEARNING</a></li>
+        <li><a href="#os">OPERATING SYSTEMS</a></li>
+        <li><a href="#comp">COMPILERS</a></li>
+        <li><a href="#web">WEB</a></li>
+        <li><a href="#mobile">MOBILE</a></li>
+        <li><a href="#algo">ALGORITHMS</a></li>
       </ul>
-      <div id="ml">
-        Machine Learning<br>
-        A9<br>
-        hackWaterloo<br>
-        Coursera ML<br>
-        Hadoop/MR<br>
-        Intro to Data Sci<br>
-        NOTE: NLP under Compilers
-      </div>
-      <div id="os">
-        Operating Systems<br>
-        SAP<br>
-        LFDS<br>
-        VM<br>
-        HW/SW Interface <br>
-      </div>
-      <div id="comp">
-        Compilers and Languages<br>
-        OptumSoft<br>
-        Fuzzer<br>
-        Coursera compilers<br>
-        Programming Languages<br>
-        NLP<br>
-      </div>
-      <div id="web">
-        Web Dev<br>
-        Harris<br>
-        A9<br>
-        This site<br>
-        PennApps<br>
-        HTML5 Game Dev<br>
-        Web Dev Udacity<br>
-        Interactive 3D Graphics<br>
-      </div>
-      <div id="mobile">
-        Mobile Dev<br>
-        FriendScore<br>
-        NEED TO DO MORE!<br>
-      </div>
-      <div id="algo">
-        Algorithms<br>
-        Project Euler<br>
-        POSA<br>
-        Heterogeneous Parallel Programming<br>
-        Programming in Python<br>
-        Intro to CS<br>
-        Cryptography<br>
-        Image and Video Processing<br>
-        Scala?<br>
-        Databases<br>
-        Networks<br>
+      <div id="tabpanel">
+        <div id="ml">
+            Machine Learning<br>
+            A9<br>
+            hackWaterloo<br>
+            Coursera ML<br>
+            Hadoop/MR<br>
+            Intro to Data Sci<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            NOTE: NLP under Compilers
+          </div>
+        <div id="os">
+          <div id="backdrop">
+            Operating Systems<br>
+            SAP<br>
+            LFDS<br>
+            VM<br>
+            HW/SW Interface <br>
+          </div>
+        </div>
+        <div id="comp">
+          <div id="backdrop">
+            Compilers and Languages<br>
+            OptumSoft<br>
+            Fuzzer<br>
+            Coursera compilers<br>
+            Programming Languages<br>
+            NLP<br>
+          </div>
+        </div>
+        <div id="web">
+          <div id="backdrop">
+            Web Dev<br>
+            Harris<br>
+            A9<br>
+            This site<br>
+            PennApps<br>
+            HTML5 Game Dev<br>
+            Web Dev Udacity<br>
+            Interactive 3D Graphics<br>
+          </div>
+        </div>
+        <div id="mobile">
+          <div id="backdrop">
+            Mobile Dev<br>
+            FriendScore<br>
+            NEED TO DO MORE!<br>
+          </div>
+        </div>
+        <div id="algo">
+          <div id="backdrop">
+            Algorithms<br>
+            Project Euler<br>
+            POSA<br>
+            Heterogeneous Parallel Programming<br>
+            Programming in Python<br>
+            Intro to CS<br>
+            Cryptography<br>
+            Image and Video Processing<br>
+            Scala?<br>
+            Databases<br>
+            Networks<br>
+          </div>
+        </div>
       </div>
     </div> 
   </body>
