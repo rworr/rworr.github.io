@@ -81,7 +81,7 @@ body, html {
     background: #1a1a1a;
     text-align: center;
     overflow: auto;
-    height: 94%;
+    height: 89%;
 }
 
 /* Minimalistic tabs based on http://keith-wood.name/uiTabs.html */
@@ -163,10 +163,14 @@ body, html {
   margin: 0;
   width: 100%;
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   height: 0;
   overflow: auto;
 }
 
-
-
+#footer {
+  font-size: 70%;
+  height: 5%;
+  color: white;
+  text-align: center;
+}
