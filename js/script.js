@@ -10,13 +10,15 @@ setHeight = function(id) {
 
 moveSelector = function(id) {
   var tab = document.getElementById(id + 'tab');
-  var selector = document.getElementById('selector');
-  console.log(tab.getBoundingClientRect().left);
-  selector.setAttribute('style','left:' + tab.getBoundingClientRect().left.toString() + 'px;');
-  console.log(selector.style.left);
+  var arrow = document.getElementById('arrow');
+  var left = tab.getBoundingClientRect().left + tab.offsetWidth/2 - arrow.offsetWidth/2;
+  var top = tab.getBoundingClientRect().bottom - tab.getBoundingClientRect().top - 1;
+  arrow.setAttribute('style','left:' + left.toString() + 'px;top:' + top.toString() + 'px;');
+  console.log(arrow.style.left);
 }
     
 window.onload = function() {
+  moveSelector('ml');
   //setHeight(activeId);
 }
       
