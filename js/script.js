@@ -1,3 +1,5 @@
+activeId = 'ml'
+
 setHeight = function(id) {
   var body = document.body;
   var header = document.getElementById('header');
@@ -23,15 +25,14 @@ window.onload = function() {
 }
       
 $(window).resize(function() {
-  //setHeight(activeId);
+  moveSelector(activeId);
 });
             
 $(function() {
   $('#tabs').tabs({
     activate: function(event, ui) {
-      var id = ui.newPanel[0].id
-      //setHeight(id);
-      moveSelector(id);
+      activeId = ui.newPanel[0].id
+      moveSelector(activeId);
     }
   });
 });

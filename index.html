@@ -27,80 +27,358 @@
       <img id="arrow" src="img/arrow.png" alt="arrow" align="center">
       <div id="tabpanel">
         <div id="ml">
-          <div id="content">
+          <div class="content">
             <h2>
               Machine Learning
             </h2><hr>
-            A9<br>
-            hackWaterloo<br>
-            Coursera ML<br>
-            Hadoop/MR<br>
-            Intro to Data Sci<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            NOTE: NLP under Compilers
+            <div class="exp">
+              <h3><img src="img/A9_logo.gif" alt="A9.com logo"><span>A9.com: Software Design Engineering</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">At A9.com, I worked on the Ranking group within the Product Search team, where
+                I used Python, internal tools, and AWS to automate training of machine-learned ranking models for Amazon.com.
+                I gained insight into how machine learning is done in industry, as I examined every script used to train models. 
+                I also designed and implemented an internal dashboard using Django and web technologies to display automatically trained models.
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><span>A9 Intern Hackathon</span><img src="img/twitter_logo.png" alt="twitter logo"></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                At the A9 Intern Hackathon, a group including myself and 3 other interns created a service which identifies trending songs
+                on Twitter, and links the top songs to the Amazon music store. Using Python, I set up a live stream of tweets 
+                about songs for the service, and developed code to identify the artist and song mentioned in the tweet, by
+                identifying and stripping irrelevant text and using internal Amazon services.
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/uw_logo.jpg" alt="uw logo"><span>hackWaterloo</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                At the hackWaterloo hackathon, I worked individually on a site which attempted to identify the mood of tweets.
+                I filtered tweets on known words which would often identify the mood of a tweet (such as 'happy' or 'angry'), 
+                and attempted to assign scores to other words in the tweet based on which targeted words they were mentioned near.
+                Additionally, I developed a UI which displayed the tweets in columns according to the identified mood, 
+                with the ability to drag-and-drop tweets from one column to the next to provide a method of user feedback.
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/ml_logo.png" alt="ml logo"><span>Coursera: Machine Learning</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                TODO
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/hadoop_logo.jpg" alt="hadoop logo"><span>Udacity: Hadoop and MapReduce</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Taught by Sarah Sproehnle and Ian Wrigley of Cloudera via Udacity.com, 
+                this course looked at the design, architecture, and use of Hadoop and MapReduce. 
+                The final project included writing and executing simple MapReduce jobs, using Python through Hadoop Streaming.
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/ds_logo.png" alt="ds logo"><span>Coursera: Data Science</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                TODO
+              </div>
+            </div>
+            <div class="note">
+              NOTE: NLP under Compilers
+            </div>
           </div>
         </div>
         <div id="os">
-          <div id="content">
+          <div class="content">
             <h2>
               Operating Systems
             </h2><hr>
-            Undergrad Research<br>
-            SAP<br>
-            LFDS<br>
-            VM<br>
-            HW/SW Interface <br>
+            <div class="exp">
+              <h3><img src="img/lightbulb.jpeg" alt="lightbulb"><span>Undergraduate Research</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                I am currently working with Prof. Wojciech Golab to identify and implement potential areas of improvement
+                for in-memory B-Trees within multi-core systems.
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/sap_logo.jpeg" alt="sap logo"><span>SAP: Software Developer, Kernel Engine Team</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                During my work term at SAP, I researched, designed, and implemented a partially lock-free dynamic memory allocator in C++.
+                I began by studying various research papers and current company code, and designed the memory allocator by incorporating ideas
+                from the papers and current code, and brainstorming data structure design with my co-workers.
+                I also created benchmarks to compare the current memory manager, prototype, and malloc on Windows, 
+                and wrote Python code to simulate memory movement within designs using data obtained by tracing allocations in code.
+                Ultimately, the final implementation showed a 10% performance increase over malloc on 64-bit systems
+                and a 20-30% performance increase over malloc on 32-bit systems.
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/lockless.jpg" alt="unlocked"><span>Lock-Free Data Structures</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                I am continuing to explore the area of lock-free technologies on my own time. I have implemented some basic 
+                lock-free data structures such as stacks and linked lists in C++, and have conducted performance analysis
+                against traditional locking methods using Intel's VTune Amplifier.
+                [<a href="https://github.com/rworr/LockFree" target="_blank">Github Repo</a>]
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/vm_logo.png" alt="vm logo"><span>Virtual Machine in C#</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                I have completed a very rudimentary virtual machine using C#, and a custom assembly language and assembler to accompany it. 
+                I followed a methodology similar to <a target="_blank" href="http://www.codeproject.com/Articles/43176/How-to-create-your-own-virtual-machine">this codeproject article</a>,
+                 by implementing the same functionality but developing the code on my own. 
+                 The machine is a 16-bit machine, using 5 registers, and 64K of addressable memory, 
+                 4K of which is used for a basic console capable of displaying characters and colour attributes. 
+                 [<a href="https://github.com/rworr/VirtualMachine" target="_blank">Github Repo</a>]
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/hwsw_logo.png" alt="chip"><span>Coursera: The Hardware/Software Interface</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Taught by Gaetano Borriello and Luis Ceze of the University of Washington via Coursera.org, 
+                this course outlined the interactions between hardware and software, 
+                and used C and x86 assembly for programming assignments. 
+                The course looked at the different abstractions between high level languages and the hardware, 
+                including assembly language, memory layout, and operating system concepts.
+              </div>
+            </div>
           </div>
         </div>
         <div id="comp">
-          <div id="content">
+          <div class="content">
             <h2>
               Compilers and Languages
             </h2><hr>
-            OptumSoft<br>
-            Fuzzer<br>
-            Coursera compilers<br>
-            Programming Languages<br>
-            NLP<br>
+            <div class="exp">
+              <h3><img src="img/optum_logo.png" alt="optumsoft logo"><span>OptumSoft: Compilers/Languages SW Eng.</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                At OptumSoft, I worked on refactoring the internal structure of their compiler
+                 to provide earlier expansion of constructs in the abstract syntax tree,
+                 with the goal of providing a simplified execution path and 
+                 ensuring clarity of which case is being handled. Additionally, I gained
+                 experience working in a linux environment, including debugging using GDB.
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/python_logo.png" alt="python logo"><span>Generic Fuzzer</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                As an external side project to the Compilers course I took at UWaterloo, I worked on developing a generic fuzzer using Python. 
+                The goal of the fuzzer was to accept a language specification file, and output randomized but valid files. The fuzzer worked well
+                for most lanugage specifications, but there were some edge cases I didn't get a chance to look at. 
+                [<a href="https://github.com/rworr/Fuzzer" target="_blank">Github Repo</a>]
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/comp_logo.png" alt="compilers logo"><span>Coursera: Compilers</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Taught by Alex Aiken of Stanford University via Coursera.org, 
+                this course outlined the aspects of a compiler for a simple object-oriented language called COOL, 
+                including lexical analysis, parsing, semantic analysis and type checking, code generation, optimization, and garbage collection. 
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/lang_logo.png" alt="languages logo"><span>Udacity: Programming Languages</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                TODO
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/nlp_logo.png" alt="natural language processing logo"><span>Coursera: Natural Language Processing</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                TODO
+              </div>
+            </div>
           </div>
         </div>
         <div id="web">
-          <div id="content">
+          <div class="content">
             <h2>
               Web Development
             </h2><hr>
-            Harris<br>
-            A9<br>
-            This site<br>
-            PennApps<br>
-            HTML5 Game Dev<br>
-            Web Dev Udacity<br>
-            Interactive 3D Graphics<br>
+            <div class="exp">
+              <h3><img src="img/internet.jpg" alt="internet logo"><span>This Website</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                This website is my first foray into building websites from scratch. I built this site using a text editor and Google,
+                and wrote all the html, css, and javascript involved on this site. The site is currently using jQuery tabs to separate the
+                information, but I hope to soon change to a scrolling-based implementation to allow scrolling between tabs. 
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/harris_logo.png" alt="harris logo"><span>Harris Canada Systems: User Experience Developer</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                During my work term at Harris Canada Systems, I implemented windows services in C# to gather system information, 
+                manage processes and services, and collect information about a specified set of files, directories, and registry keys.
+                I also developed logic for remote procedure calls to these services, managed threads and execution of multiple requests 
+                within the services, and implemented asynchronous client-server communication using TCP sockets and http requests and responses.
+                I also worked on debugging and developing the web-based UI implemented using Silverlight for multiple products.
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/A9_logo.gif" alt="A9.com logo"><span>A9.com: Software Design Engineering</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Part of my project at A9.com involved development of a dashboard to visualize the results
+                of the automated system I developed. I developed the dashboard using Django to implement
+                a backend service capable of interacting with RDS and S3 (AWS services), and used the
+                Datatables jQuery plugin to help visualize the results. 
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/penn_logo.png" alt="pennapps logo"><span>PennApps</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                At the PennApps Spring 2014 hackathon, I worked with my teammate, Kevin Wong, to develop a website 
+                capable of using UWaterloo student credentials to aggregate and display student-related information. We used
+                Python scripts (through GoogleAppEngine) to login to UWaterloo sites and collect session cookies, 
+                then obtain textbook information from UWaterloo and Amazon.com, and scrape course schedule information.
+                The website displayed a list of upcoming classes, textbooks, Waterloo weather and a UWaterloo twitter feed on dashboard.
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/html5_logo.png" alt="html5 logo"><span>Udacity: HTML5 Game Development</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Taught by Colt McAnlis and Peter Lubbers (both from Google) via Udacity.com, 
+                this course looked at development of major components, written in JavaScript, of an HTML5 game. 
+                The course discussed the canvas, atlases, input and event handling, external physics libraries (Box2D), 
+                using sounds, and asynchronous loading.
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/blog_logo.png" alt="blog logo"><span>Udacity: Web Development</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                TODO
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/teapot.jpeg" alt="teapot"><span>Udacity: Interactive 3D Graphics</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                TODO
+              </div>
+            </div>
           </div>
         </div>
         <div id="mobile">
-          <div id="content">
+          <div class="content">
             <h2>
               Mobile Development
             </h2><hr>
-            FriendScore<br>
-            NEED TO DO MORE!<br>
+            <div class="exp">
+              <h3><img src="img/friendscore.png" alt="friendscore"><span>FriendScore</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                TODO
+              </div>
+            </div>
+            <div class="note">
+              NEED TO DO MORE!
+            </div>
           </div>
         </div>
         <div id="algo">
-          <div id="content">
+          <div class="content">
             <h2>
               Algorithms, Data Structures, and Miscellaneous Programming
             </h2><hr>
-            Project Euler<br>
-            POSA<br>
-            Heterogeneous Parallel Programming<br>
-            Programming in Python<br>
-            Intro to CS<br>
-            Cryptography<br>
-            Image and Video Processing<br>
-            Scala?<br>
-            Databases<br>
-            Networks<br>
+            <div class="exp">
+              <h3><img src="img/euler_portrait.png" alt="euler"><span>Project Euler</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                TODO
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/posa_logo.png" alt="posa logo"><span>Coursera: Pattern-Oriented Software Architectures</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Taught by Douglas Schmidt of Vanderbilt University via Coursera.org, 
+                this course looked at patterns, which are general solutions to common problems in software design, 
+                and focused on the patterns used in concurrent and networked software. 
+                In addition to an overview of concurrency, networking, and the associated patterns and frameworks, 
+                the course also featured a look at the Android and ACE frameworks, and a look inside JAWS, an open-source web server.
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/hetero_logo.png" alt="hetero logo"><span>Coursera: Heterogeneous Parallel Programming</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Taught by Wen-mei W. Hwu of the University of Illinois at Urbana-Champaign via Coursera.org, 
+                this course covered the parallel execution model, memory models for locality, parallel algorithm patterns, 
+                overlapping computation and communication, and scalable programming using CUDA in computing clusters. 
+                The course included 5 parallel programming assignments written in CUDA C 
+                (vector addition, simple and tiled matrix multiplication, reduction and scan algorithms).
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/py_logo.png" alt="python logo"><span>Coursera: Interactive Programming in Python</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Taught by Joe Warren, Scott Rixner, John Greiner, and Sephen Wong of Rice University via Coursera.org, 
+                this course covered an introduction to python with a focus on simple game development. 
+                Topics included object-oriented programming in Python, in-game physics, and basic animations. 
+                Assignments were conducted in the <a href="http://codeskulptor.org" target="_blank">codeskulptor</a> environment, 
+                and included a variety of simple games, such as pong, blackjack, and 
+                <a href="http://www.codeskulptor.org/#user37_FdpF6dIuYO_2.py" target="_blank">RiceRocks (Asteroids)</a>.
+                On codeskulptor, press Alt-R to play RiceRocks. Use the arrow keys to control movement, and the space bar to fire missiles.
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/cs_logo.jpg" alt="cs logo"><span>Udacity: Computer Science 101</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Taught by David Evans of the University of Virginia via Udacity.com this course gave an introduction to Python. 
+                The course project involved construction of a web crawler and how to extract and follow links in HTML pages, 
+                and basic search engine functionality using the PageRank algorithm to prioritize crawled pages.
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/crypto_logo.png" alt="cryptography logo"><span>Coursera: Cryptography I</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Taught by Dan Boneh of Stanford University via Coursera.org, 
+                this course covered a variety of cryptographic principles and primitives including block ciphers 
+                (3DES, AES), message integrity (MAC), and public key encryption (Diffie-Hellman, RSA). 
+                The course also introduced mathematical definitions of concepts such as semantic security and perfect security. 
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/img_logo.png" alt="image logo"><span>Coursera: Image and Video Processing</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                Taught by Guillermo Sapiro of Duke University via Coursera.org, this course covered image and video compression, 
+                spatial processing, image restoration, image segmentation, and image and video inpainting and special effects. 
+                Applications of image and video processing, such as medical imaging and image transfer, were also discussed.
+              </div>
+            </div>
+            <div class="exp even">
+              <h3><img src="img/db_logo.png" alt="databases logo"><span>Coursera: Databases</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                TODO
+              </div>
+            </div>
+            <div class="exp">
+              <h3><img src="img/net_logo.png" alt="networks logo"><span>Coursera: Networks</span></h3>
+              <img src="img/indent_arrow.png" alt="indent arrow">
+              <div class="desc">
+                TODO
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -29,6 +29,8 @@ a {
 body, html {
   margin: 0;
   height: 100%;
+  min-width: 1050px;
+  min-height: 540px;
   font-family: 'Maven Pro', sans-serif;
 }
 
@@ -98,13 +100,15 @@ body, html {
   overflow: auto;
 }
 
+/* footer div styling */
 #footer {
   font-size: 75%;
   height: 40px;
   text-align: center;
 }
 
-#content {
+/* content styling */
+.content {
   background: none;
   margin-left: 20%;
   margin-right: 20%;
@@ -130,4 +134,71 @@ img {
 
 #footer a {
   font-size: 150%;
+}
+
+.exp {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.exp > h3 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+h3 > img {
+  height: 36px;
+  width: 36px;
+}
+
+div > h3 > span {
+  position: absolute;
+  top: 6px;
+  margin-left: 10px;
+}
+
+div.even h3 span {
+  right: 47px;
+}
+
+div > img {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 40px;
+  left: 18px;
+}
+
+.exp > .desc {
+  margin-left: 47px;
+}
+
+div.even {
+  text-align: right;
+}
+
+div.even > .desc {
+  margin-right: 47px;
+}
+
+div.even > img {
+  position: absolute;
+  top: 41px;
+  left: 96%;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.note {
+  text-align: center;
+  
+}
+
+.desc > a {
+  text-decoration: underline;
 }
