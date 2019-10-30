@@ -67,7 +67,7 @@ body, html {
 /* set tab font, width, text alignment */
 .ui-tabs .ui-tabs-nav li {
   font-family: 'Lato', sans-serif;
-  width:16.6666666667%;
+  width:25%;
   text-align: center;
   margin: 0;
 }
